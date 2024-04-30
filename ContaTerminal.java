@@ -9,22 +9,23 @@ public class ContaTerminal {
 		String nomeDoCliente;
 		double saldo;
 
+
+		System.out.println("Por favor, digite o seu nome!");
+		nomeDoCliente = input.nextLine();
+
 		System.out.println("Por favor, digite o número da Agência!");
 		numero = input.nextInt();
 
 		System.out.println("Por favor, digite a Agência!");
 		agencia = input.next();
 
-		System.out.println("Por favor, digite o seu nome!");
-		nomeDoCliente = input.next();
-
 		System.out.println("Por favor, digite o seu saldo!");
 		saldo = input.nextDouble();
 
 		System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo %f já está disponível para saque.%n", 
-		nomeDoCliente, 
-		agencia, 
-		numero, 
-		saldo); 	
+			nomeDoCliente, 
+			agencia, 
+			numero, 
+			saldo); 	
 	}
 }
